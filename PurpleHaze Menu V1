@@ -1,0 +1,33 @@
+--Made By: PurpleHaze Assisted by some other haze crew Youtubers LINK TO MY YT: https://www.youtube.com/@purplehzevra6709/about
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("PurpleHaze's Haze Menu V1", "GrapeTheme")
+
+local Normal = Window:NewTab("Normal")
+
+local NormalSection = Normal:NewSection("Normal Mods")
+
+-- Day 2 -- 
+
+NormalSection:NewSlider("ZOOM ZOOM!!", "Walkspeed changer thing", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+NormalSection:NewSlider("BOING BOING!!", "jump power changer thing", 250, 50, function(s)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+local OP = Window:NewTab("OP Mods")
+
+local OPSection = OP:NewSection("OP Mods")
+
+
+OPSection:NewButton("ADMIN!", "Infinite Yield/FE Admin Menu", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+--Day 3 (Fixing Boing Boing Error)
+
+--It worked after talking to a scripter that is teaching me it worked i found the issue it just doesnt work in every game :(
